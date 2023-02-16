@@ -1,19 +1,24 @@
-export interface IUser {
-  telegramId: number;
-  firstName: string;
-  lastName?: string;
-  userName?: string;
+import { Chat, User } from 'node-telegram-bot-api';
+
+export type ScheduledEventType = 'photo' | 'dod_report' | 'p_tournament';
+
+export interface IScheduledEvent {
+  type: ScheduledEventType;
+  time: string;
+  photoQuery?: string;
 }
 
-export interface ICompliment {
-  value: string;
+export interface IUser extends User {}
+
+export interface IChat extends Chat {
+  scheduled_events?: IScheduledEvent[];
 }
 
 interface IUnsplashUrls {
   large: string;
   regular: string;
   raw: string;
-  small: string
+  small: string;
 }
 
 interface IUnsplashUser {

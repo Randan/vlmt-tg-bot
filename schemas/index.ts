@@ -1,4 +1,4 @@
 import Users from './user.schema';
-import Compliments from './compliment.schema';
+import Chats from './chat.schema';
 
-export { Users, Compliments };
+export { Chats, Users };

@@ -3,10 +3,8 @@ import handleError from './handleError';
 import {
   adminId,
   appPort,
-  dbComplimentsCollection,
   dbMongooseUri,
   dbUrl,
-  dbUsersCollection,
   timezone,
   unsplashAppToken,
   unsplashUri,
@@ -16,10 +14,8 @@ import * as lib from './lib';
 export {
   adminId,
   appPort,
-  dbComplimentsCollection,
   dbMongooseUri,
   dbUrl,
-  dbUsersCollection,
   handleError,
   lib,
   notifyAdmin,

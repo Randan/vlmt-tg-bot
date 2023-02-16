@@ -1,20 +1,24 @@
 import mongoose, { Schema } from 'mongoose';
-import { dbUsersCollection } from '../utils';
 import { IUser } from '../interfaces';
 
 const userSchema = new Schema<IUser>({
-  telegramId: Number,
-  firstName: String,
-  lastName: {
+  id: Number,
+  is_bot: Boolean,
+  first_name: String,
+  last_name: {
     type: String,
     default: undefined
   },
-  userName: {
+  username: {
+    type: String,
+    default: undefined
+  },
+  language_code: {
     type: String,
     default: undefined
   }
 });
 
-const Users = mongoose.model(dbUsersCollection, userSchema);
+const Users = mongoose.model('users', userSchema);
 
 export default Users;

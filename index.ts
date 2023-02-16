@@ -12,7 +12,7 @@ import './events';
 
 app.listen(appPort, () => {
   notifyAdmin(lib.botWokeUp());
-  console.log(`⚡⚡⚡ ComplimentBot Alive on PORT: ${appPort}`);
+  console.log(`⚡⚡⚡ VLMT-Bot Alive on PORT: ${appPort}`);
 });
 
-import './cron';
+// import './cron';

@@ -1,19 +1,23 @@
-import addCompliment from './addCompliment';
+import addChat from './addChat';
+import addScheduledEvent from './addScheduledEvent';
 import addUser from './addUser';
-import help from './help';
-import removeUser from './removeUser';
-import sendCompliment from './sendCompliment';
-import sendComplimentAndFlowerToAllUsers from './sendComplimentAndFlowerToAllUsers';
-import sendPhotoFromStock from './sendPhotoFromStock';
 import getPhotoFromQuery from './getPhotoFromQuery';
+import help from './help';
+import removeChat from './removeChat';
+import removeScheduledEvent from './removeScheduledEvent';
+import removeUser from './removeUser';
+import sendPhotoFromStock from './sendPhotoFromStock';
+import setScheduledEvent from './setScheduledEvent';
 
 export {
-  addCompliment,
+  addChat,
+  addScheduledEvent,
   addUser,
-  help,
-  removeUser,
-  sendCompliment,
-  sendComplimentAndFlowerToAllUsers,
-  sendPhotoFromStock,
   getPhotoFromQuery,
+  help,
+  removeChat,
+  removeScheduledEvent,
+  removeUser,
+  sendPhotoFromStock,
+  setScheduledEvent,
 };
